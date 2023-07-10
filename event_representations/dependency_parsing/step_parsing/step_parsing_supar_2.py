@@ -9,34 +9,6 @@ from supar import Parser
 import dill as pickle
 
 
-# Load sid2step.p file.
-sid2step = pickle.load(open('sid2step.p', 'rb'))
-
-# Build a list of all step_ids.
-keys = list(sid2step.keys())
-
-# Load roberta-based biaffine dependency parser via supar.
-parser = Parser.load('biaffine-dep-roberta-en')
-
-print("Parsing begins...\n")
-
-# Parse the second 100,000 steps(100000-199999).
-print("Parse the second 100,000 steps(100000-199999).\n")
-sid2parse_step_2 = dict()
-for sid in keys[100000:200000]:
-    if sid not in sid2parse_step_2:
-        print(sid, sid2step[sid])
-        sid2parse_step_2[sid] = parser.predict(sid2step[sid], lang='en', prob=True, verbose=False)
-        print(sid, "parsed.\n")
-        
-# Write the deptrees for the second 100,000 step headlines to step_parses_2.p file.
-print("Parsing finished. Start writting step_parses_2.p file.\n")
-with open('step_parsing_results/step_parses_2.p', 'wb') as file:
-    pickle.dump(sid2parse_step_2, file)
-print("step_parses_2.p writting finished.\n")
-
-
-
 def parse(input_path:str, output_path:str):
     """
     Do dependency parsing on the step headline sentences of articles.

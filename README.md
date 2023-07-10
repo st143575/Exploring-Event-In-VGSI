@@ -17,10 +17,8 @@ Step 2: Run the code in ./data_preprocessing/data_preprocessing.ipynb.
 
 PS: The output of data_preprocessing.ipynb can be found in Google Drive (TBD).
 
-Step 3: Run  
-```
-python sid2step.p -i output/articles_df.p -o output/
-```
+Step 3: Run:
+			python sid2step.p -i output/articles_df.p -o output/
 
 ### Dependency Parsing
 Step 1: Go to the directory ./event_representations/dependency_parsing/.
@@ -33,26 +31,22 @@ To parse the goal sentences,
 
 - Go to the directory ./goal_parsing/.
 
-- Run  
-  ```
-  python goal_parsing_supar.py -i ../input/articles_df.p -o output/
-  ```
+- Run:
+	python goal_parsing_supar.py -i ../input/articles_df.p -o output/
 
 To parse the step headline sentences,
 
 - Go to the directory ./step_parsing/.
 
-- For convenience, the 772k step headlines were separately parsed.  
-  Run:  
-  	```
-	python step_parsing_supar_1.py -i ../input/sid2step.p -o output/  
-	python step_parsing_supar_2.py -i ../input/sid2step.p -o output/  
-	...  
+- For convenience, the 772k step headlines were separately parsed.
+  Run:
+	python step_parsing_supar_1.py -i ../input/sid2step.p -o output/
+	python step_parsing_supar_2.py -i ../input/sid2step.p -o output/
+	...
 	python step_parsing_supar_8.py -i ../input/sid2step.p -o output/
-	```
-  
-- Merge the 8 results:  
-	Run ```python step_parsing_merge.py```
+
+- Merge the 8 results:
+	python step_parsing_merge.py
 
 PS: The output of step_parsing_merge.py can be found in Google Drive (TBD).
 
