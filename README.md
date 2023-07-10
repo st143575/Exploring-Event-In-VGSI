@@ -30,31 +30,31 @@ Step 2:
 
 - Put the files articles_df.p and sid2step.p (see the directory data_preprocessing/output/) in the directory ./input/.
 
-To parse the goal sentences, 
+- To parse the goal sentences, 
 
-- Go to the directory ./goal_parsing/.
+	- Go to the directory ./goal_parsing/.
+	
+	- Run  
+		```
+		python goal_parsing_supar.py -i ../input/articles_df.p -o output/
+	 	```
 
-- Run  
-	```
-	python goal_parsing_supar.py -i ../input/articles_df.p -o output/
- 	```
+- To parse the step headline sentences,
 
-To parse the step headline sentences,
+	- Go to the directory ./step_parsing/.
+	
+	- For convenience, the 772k step headlines were separately parsed.
+	  Run  
+	  	```
+		python step_parsing_supar_1.py -i ../input/sid2step.p -o output/  
+		python step_parsing_supar_2.py -i ../input/sid2step.p -o output/  
+		...  
+		python step_parsing_supar_8.py -i ../input/sid2step.p -o output/  
+	   	```
+	
+	- Merge the 8 results:
+	  Run ```python step_parsing_merge.py```
+	
+	PS: The output of step_parsing_merge.py can be found in Google Drive (TBD).
 
-- Go to the directory ./step_parsing/.
-
-- For convenience, the 772k step headlines were separately parsed.
-  Run  
-  	```
-	python step_parsing_supar_1.py -i ../input/sid2step.p -o output/  
-	python step_parsing_supar_2.py -i ../input/sid2step.p -o output/  
-	...  
-	python step_parsing_supar_8.py -i ../input/sid2step.p -o output/  
-   	```
-
-- Merge the 8 results:
-  Run ```python step_parsing_merge.py```
-
-PS: The output of step_parsing_merge.py can be found in Google Drive (TBD).
-
---COMING SOON--
+-- IN PROCESS, MORE COMING SOON --
