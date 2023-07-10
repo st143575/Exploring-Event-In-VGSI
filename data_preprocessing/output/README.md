@@ -1,4 +1,4 @@
-Output of the data preprocessing step.
+# Output of the data preprocessing step.
 
 This directory contains:  
 - articles_df.p  The output of data_preprocessing.ipynb.
