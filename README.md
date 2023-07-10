@@ -57,4 +57,4 @@ Step 2:
 	
 	PS: The output of step_parsing_merge.py can be found in Google Drive (TBD).
 
--- IN PROCESS, MORE COMING SOON --
+-- IN PROCESSING, MORE COMING SOON. --
