@@ -1,6 +1,6 @@
 # Combining Tradition with Modernness: Exploring Event Representations in Vision-and-Language Models for Visual Goal–Step Inference
 
-This is the code for our paper at ACL 2023 SRW:  
+This repository contains the code for our paper at ACL 2023 SRW:  
 [Combining Tradition with Modernness: Exploring Event Representations in Vision-and-Language Models for Visual Goal–Step Inference](https://aclanthology.org/2023.acl-srw.36/)
 
 ## Dataset
