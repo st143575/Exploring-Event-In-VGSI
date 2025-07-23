@@ -9,6 +9,9 @@ This is the code for our paper at ACL 2023 SRW:
 We use the data provided by [Yang et al., 2021](https://arxiv.org/abs/2104.05845). The original dataset is available [here](https://drive.google.com/drive/folders/1hjjcNSUSqv8AbA7R-5lIKmui-ySCEWJw?usp=sharing). We preprocessed the data as described in our paper. Data and code for the intermediate steps can be found [here](https://drive.google.com/drive/folders/1SGpkE01156NmgwT4BXXjrSq3TBoVUNGT?usp=share_link).
 
 ## Usage
+- Prerequisites:
+  - Python 3
+  - cuda 12.8
 - **Step 1**: Run code in `./data_preprocessing/`.
 - **Step 2**: Run code in `./event_representations/`.
 - **Step 3**: Run code in `./analysis/`.
