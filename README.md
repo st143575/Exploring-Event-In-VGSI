@@ -6,7 +6,7 @@ This is the code for our paper at ACL 2023 SRW:
 ## Dataset
 <img src="./figures/vgsi_example.png" width="50%">
 
-We use the data provided by [Yang et al., 2021](https://arxiv.org/abs/2104.05845). The original dataset is available [here](https://drive.google.com/drive/folders/1hjjcNSUSqv8AbA7R-5lIKmui-ySCEWJw?usp=sharing). We preprocessed the data as described in our paper. The data for the intermediate steps described in the following section can be found [here](https://drive.google.com/drive/folders/1SGpkE01156NmgwT4BXXjrSq3TBoVUNGT?usp=share_link).
+We use the data provided by [Yang et al., 2021](https://arxiv.org/abs/2104.05845). The original dataset is available [here](https://drive.google.com/drive/folders/1hjjcNSUSqv8AbA7R-5lIKmui-ySCEWJw?usp=sharing). We preprocessed the data as described in our paper. Data and code for the intermediate steps can be found [here](https://drive.google.com/drive/folders/1SGpkE01156NmgwT4BXXjrSq3TBoVUNGT?usp=share_link).
 
 ## Usage
 - **Step 1**: Run code in `./data_preprocessing/`.
